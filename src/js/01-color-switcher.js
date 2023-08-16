@@ -27,15 +27,14 @@ function getRandomHexColor() {
     }`;
 }
 
-// ==============================Some button style=============================
+// ==============================Some button`s styles=============================
 
+refs.startBtn.style.padding = '10px'; 
+refs.stopBtn.style.padding = '10px';
 const buttonContainer = document.createElement('div');
 buttonContainer.classList.add('button-container');
-
 buttonContainer.append(refs.startBtn, refs.stopBtn);
-
 document.body.appendChild(buttonContainer);
-
 const btnContainer = document.querySelector('.button-container');
 btnContainer.style.cssText = `
     display: flex;
@@ -44,8 +43,6 @@ btnContainer.style.cssText = `
     margin-top: 150px;
     `;
     
-
-    refs.startBtn.style.padding = '10px'; 
-    refs.stopBtn.style.padding = '10px';
+    
 
 

@@ -73,32 +73,32 @@ const onStart = () => {
 
 
 
-// ===============Some custom style for reversTimer====================
+// ===============Some custom style for reversTimer`s screen====================
 
-// const timerContainer = document.querySelector('.timer');
-// timerContainer.style.cssText = `
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   gap: 10px;
-//   margin-top: 15px;
-// `;
+const timerContainer = document.querySelector('.timer');
+timerContainer.style.cssText = `
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+`;
 
-// const fieldContainers = document.querySelectorAll('.field');
-// fieldContainers.forEach(container => {
-//   container.style.cssText = `
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     font-size: 30px;
-//   `;
-// });
+const fieldContainers = document.querySelectorAll('.field');
+fieldContainers.forEach(container => {
+  container.style.cssText = `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+  `;
+});
 
-// const labelElements = document.querySelectorAll('.label');
-// labelElements.forEach(label => {
-//     label.style.cssText = `
-//     text-transform: uppercase;
-//     font-size: 7px;
-//     `;
-// });
+const labelElements = document.querySelectorAll('.label');
+labelElements.forEach(label => {
+    label.style.cssText = `
+    text-transform: uppercase;
+    font-size: 7px;
+    `;
+});
 
