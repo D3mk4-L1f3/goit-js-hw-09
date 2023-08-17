@@ -1,12 +1,3 @@
-// function createPromise(position, delay) {
-//   const shouldResolve = Math.random() > 0.3;
-//   if (shouldResolve) {
-//     // Fulfill
-//   } else {
-//     // Reject
-//   }
-// }
-
 import Notiflix from "notiflix";
 
 const MainForm = document.querySelector('.form');
@@ -21,7 +12,7 @@ function onHandleButtonSubmit(evt) {
   const totalAmount = Number(amount.value);
   const stepValue = Number(step.value);
 
-  for (let i = 0; i < totalAmount; i += 1) {
+  for (let i = 1; i <= totalAmount; i += 1) {
     const currentDelay = initialDelay + (i - 1) * stepValue;
     createPromise(i, currentDelay);
   };
